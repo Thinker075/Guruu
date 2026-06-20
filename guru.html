@@ -585,17 +585,22 @@
 
     .tab-btn {
       flex: 1;
-      padding: 12px 0;
+      padding: 10px 4px;
       border: none;
       background: none;
       color: var(--text-dim);
       cursor: pointer;
-      font-size: 12px;
-      font-weight: 500;
+      font-size: 10px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.02em;
       border-bottom: 3px solid transparent;
       transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      min-width: 0;
     }
 
     .tab-btn.active {
@@ -824,9 +829,9 @@
 
   <!-- Tab Bar -->
   <div class="tab-bar">
-    <button class="tab-btn active" data-tab="chat-view">Chat</button>
-    <button class="tab-btn" data-tab="workflows-view">Workflows</button>
-    <button class="tab-btn" data-tab="admin-view">Admin Panel</button>
+    <button class="tab-btn active" data-tab="chat-view"><span style="font-size:18px">💬</span>Chat</button>
+    <button class="tab-btn" data-tab="workflows-view"><span style="font-size:18px">📋</span>Flows</button>
+    <button class="tab-btn" data-tab="admin-view"><span style="font-size:18px">⚙️</span>Admin</button>
   </div>
 </div>
 
